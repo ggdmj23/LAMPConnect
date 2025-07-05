@@ -1,0 +1,436 @@
+/* === components.css ===
+   Custom reusable components: glitch text, console boxes, labels, etc.
+*/
+
+/* Glitch header title */
+.glitch-title {
+  font-family: "MrRobot", "Bebas Neue", sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff003c;
+  text-shadow: 1px 1px #000;
+  position: relative;
+  margin: 3rem 0 2rem;
+  text-align: center;
+  animation: flicker 2s infinite;
+}
+
+.glitch-title::before,
+.glitch-title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ff003c;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glitch-title::before {
+  left: 1.5px;
+  text-shadow: -1.5px 0 blue;
+  animation: glitchTop 1.3s infinite linear alternate-reverse;
+}
+
+.glitch-title::after {
+  left: -1.5px;
+  text-shadow: 1.5px 0 limegreen;
+  animation: glitchBottom 1.3s infinite linear alternate-reverse;
+}
+
+/* Glitch subtitle (used in footer) */
+.glitch-text {
+  font-family: "MrRobot", "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  color: #ff003c;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  letter-spacing: 1.5px;
+  animation: flicker 2s infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ff003c;
+  z-index: -1;
+}
+
+.glitch-text::before {
+  animation: glitchTop 1.5s infinite linear alternate-reverse;
+  left: 1px;
+  text-shadow: -1px 0 blue;
+}
+
+.glitch-text::after {
+  animation: glitchBottom 1.5s infinite linear alternate-reverse;
+  left: -1px;
+  text-shadow: 1px 0 limegreen;
+}
+
+/* Console-style UI boxes */
+.console-box,
+.status-message {
+  background-color: #000;
+  color: #33ff33;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1rem;
+  border: 1px solid #33ff33;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 10px #33ff33;
+  position: relative;
+  line-height: 1.6;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.console-box::before,
+.status-message::after {
+  content: "_";
+  animation: blink 1s step-start infinite;
+  color: inherit;
+  margin-left: 4px;
+}
+
+.console-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.05),
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Console-like status labels */
+.console-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  text-shadow: 0 0 6px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+/* List with glitch bullets */
+ul.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-bullets li {
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+ul.custom-bullets li::before {
+  content: "L";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: black;
+  color: #ff003c;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+  box-shadow: 0 0 3px #ff003c;
+  animation: bullet-glitch 1.5s infinite alternate-reverse;
+}
+
+
+input,
+textarea,
+select {
+  background-color: transparent;
+  color: #00ff66;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+
+  /* Engraved/inset effect */
+  box-shadow:
+    inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+    inset -2px -2px 4px rgba(0, 255, 102, 0.2);
+
+  outline: none;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 255, 102, 0.5);
+  font-style: italic;
+}
+
+/* Focus effect (3D glow outline) */
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.7),
+    inset -1px -1px 2px rgba(0, 255, 102, 0.3),
+    0 0 5px #00ff66,
+    0 0 10px #00ff66;
+  color: #ffffff;
+}
+
+
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: transparent;
+  color: #00ff66;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* Engraved / inset terminal style */
+  box-shadow:
+    inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+    inset -2px -2px 4px rgba(0, 255, 102, 0.2),
+    0 0 4px rgba(0, 255, 102, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect — intense terminal glow */
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  color: #ffffff;
+  box-shadow:
+    inset 1px 1px 2px rgba(0, 0, 0, 0.7),
+    inset -1px -1px 2px rgba(0, 255, 102, 0.3),
+    0 0 6px #00ff66,
+    0 0 12px #00ff66;
+}
+
+/* Focus effect for accessibility */
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  outline: none;
+  box-shadow:
+    0 0 6px #00ff66,
+    0 0 10px #00ff66,
+    inset 1px 1px 3px rgba(0, 0, 0, 0.6),
+    inset -1px -1px 2px rgba(0, 255, 102, 0.3);
+}
+
+button:hover {
+  animation: pulseGlow 1.2s infinite;
+}
+
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 5px #00ff66; }
+  50%  { box-shadow: 0 0 12px #00ff66; }
+  100% { box-shadow: 0 0 5px #00ff66; }
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #ff003c;
+  border: 1px solid #ff003c;
+  padding: 0.3rem 0.6rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-shadow: 0 0 3px #ff003c;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: rgba(255, 0, 60, 0.1);
+  box-shadow: 0 0 6px #ff003c;
+  color: #ffffff;
+}
+
+.password-inline-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-inline-wrapper input[type="password"] {
+  width: 100%;
+  padding-right: 2.5rem;
+  box-sizing: border-box;
+  height: 2.5rem; /* match your other fields if needed */
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #0f0;
+  cursor: pointer;
+  padding: 0;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+
+.toggle-password i {
+  pointer-events: none; /* avoids issues on click */
+}
+
+
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Optional: ensures even column widths */
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 10px #000;
+}
+
+.main-content th,
+.main-content td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #00ff66;
+  word-wrap: break-word;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.main-content th {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.main-content td {
+  color: #ddd;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.main-content {
+  overflow-x: auto;
+}
+
+
+.scroll-table-wrapper {
+  max-height: 400px; /* or 50vh for responsive */
+  overflow-y: auto;
+  border: 1px solid #00ff66;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #00ff66;
+  margin-top: 1rem;
+}
+
+/* Optional: style scrollbar for retro vibe */
+.scroll-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #00ff66;
+  border-radius: 4px;
+}
+.scroll-table-wrapper::-webkit-scrollbar-track {
+  background-color: #111;
+}
+
+
+.scroll-table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+
+
+.message-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center; /* This ensures vertical alignment */
+  margin-top: 0.5rem;
+}
+
+.inline-form {
+  display: inline;
+}
+
+.fav-toggle-btn,
+.delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  height: 2rem; /* Optional: force equal height */
+  border-radius: 5px;
+}
+
+
+.fav-toggle-btn {
+  background-color: #003300;
+  color: gold;
+  border: 1px solid #00ff00;
+  margin-top: 8px;
+}
+
+.delete-button {
+  background-color: #330000;
+  color: #ff4444;
+  border: 1px solid #ff0040;
+}
+
+
+
+.message-item.favorite {
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px 2px #00ff00;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.message-item.favorite {
+  animation: glow-pulse 1.5s infinite alternate;
+}
+
+@keyframes glow-pulse {
+  from {
+    box-shadow: 0 0 8px 1px #00ff00;
+  }
+  to {
+    box-shadow: 0 0 16px 3px #00ff00;
+  }
+}

@@ -1,0 +1,220 @@
+.hidden {
+  display: none !important;
+}
+
+/* === Modal Overlay Shared === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 15, 10, 0.95);
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* === Modal Content Base === */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #00ff66;
+  box-shadow:
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8),
+    inset -2px -2px 6px rgba(0, 255, 102, 0.2),
+    0 0 10px rgba(0, 255, 102, 0.3);
+  color: #00ff66;
+  padding: 2rem;
+  border-radius: 6px;
+  max-width: 600px;
+  width: 90%;
+  animation: fadeInZoom 0.3s ease;
+
+  /* NEW: scroll fix setup */
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+/* === Scrollable Message Area Inside Modal === */
+.modal-scrollable {
+  overflow-y: auto;
+  flex: 1;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff00 transparent;
+}
+
+.modal-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scrollable::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border-radius: 5px;
+}
+
+/* === Modal Headings & Text === */
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00ff66;
+  text-shadow: 0 0 6px #00ff66;
+}
+
+.modal-content p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+/* === Buttons === */
+.modal-actions {
+  text-align: right;
+  margin-top: auto;
+}
+
+.modal-actions button {
+  background-color: transparent;
+  color: #00ff66;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  box-shadow:
+    inset 2px 2px 4px rgba(0, 0, 0, 0.8),
+    inset -2px -2px 4px rgba(0, 255, 102, 0.2),
+    0 0 4px rgba(0, 255, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.modal-actions button:hover {
+  color: #ffffff;
+  box-shadow:
+    inset 1px 1px 2px rgba(0, 0, 0, 0.7),
+    inset -1px -1px 2px rgba(0, 255, 102, 0.3),
+    0 0 6px #00ff66,
+    0 0 12px #00ff66;
+}
+
+/* === Modal Animations === */
+@keyframes fadeInZoom {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* === Typewriter and Cursor === */
+.cursor {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: #00ff66;
+  animation: blinkCursor 1s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(21) forwards;
+  border-right: none;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 21ch }
+}
+
+.typewriter-block {
+  opacity: 0;
+  animation: fadeInBlock 0.6s ease forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes fadeInBlock {
+  to { opacity: 1; }
+}
+
+.typewriter-block p,
+.typewriter-block .modal-actions {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInLine 0.4s ease forwards;
+}
+
+.typewriter-block p:nth-of-type(1) { animation-delay: 2.4s; }
+.typewriter-block p:nth-of-type(2) { animation-delay: 2.8s; }
+.typewriter-block p:nth-of-type(3) { animation-delay: 3.2s; }
+.typewriter-block p:nth-of-type(4) { animation-delay: 3.6s; }
+.typewriter-block .modal-actions { animation-delay: 4.0s; }
+
+@keyframes fadeInLine {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Confirmation Modal === */
+#confirmation-modal .modal-content {
+  text-align: center;
+}
+
+#confirmation-modal #modal-message {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 6px #00ff66;
+}
+
+#confirmation-modal .modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* === Custom User Style === */
+.modal-content.user-style {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 2px solid #0f0;
+  box-shadow: 0 0 30px lime;
+  animation: glowIn 0.5s ease-out;
+}
+
+.modal-content.user-style h3 {
+  color: #0f0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes glowIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+.favorite-star {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #00ff66;
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Share Tech Mono', monospace;
+  z-index: 2;
+}

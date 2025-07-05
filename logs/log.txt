@@ -1,0 +1,529 @@
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+📤 Email status: 0
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+📤 Email status: 0
+🚀 Logging works
+🚀 process_contact.php started
+⚙️ Script started
+✅ Connected to DB
+📝 Message saved
+📤 Email status: 0
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored successfully
+📤 Email status: 0
+📤 Email status: Success
+📤 Email status: 0
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored successfully
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 7
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 7
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 5
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 7
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 8
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 8
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 8
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+📤 Email status: 0
+📤 Email status: 0
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 2
+📤 Email status: 0
+📤 Email status: Success
+📤 Email status: 0
+📤 Email status: 0
+📤 Email status: 0
+📤 Email status: 0
+📤 Email status: 0
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+📤 Email status: 0
+📤 Email status: 0
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 5
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact sc// fresh starript initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored anonymously
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+t🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 4
+📤 Email status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+[2025-07-02 17:39:06] 📤 Email sent with status: 0
+📤 Email status: Success
+🚀 Contact script initiated
+✅ DB connection established
+📝 Message stored with user_id = 1
+[2025-07-02 17:40:07] 📤 Email sent with status: 0
+📤 Email status: Success
+
+// fresh start again
+
+
+
+[2025-07-02 17:53:03] 📤 Email sent with status: 0
+[2025-07-03 05:35:04][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 05:35:25][INFO] User 'Clara' (Role: user) logged in successfully
+[2025-07-03 05:35:41][INFO] User 'SuperAdmin' (Role: super_admin) logged in successfully
+[2025-07-03 05:36:05][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 05:36:25][INFO] User 'Clara' (Role: user) logged in successfully
+[2025-07-03 05:36:50][WARN] Failed login attempt for identifier: 'clra'
+[2025-07-03 05:37:11][INFO] User 'Clara' (Role: user) logged in successfully
+[2025-07-03 05:37:33][WARN] Failed login attempt for identifier: 'clara'
+[2025-07-03 05:44:29][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 05:44:32][INFO] User '' logged out
+[2025-07-03 05:49:42][WARN] Unknown user session ended
+[2025-07-03 05:49:42][INFO] User 'Clara' (Role: user) logged in successfully
+[2025-07-03 05:49:45][INFO] User '' logged out
+[2025-07-03 05:53:33][INFO] User 'Clara' (Role: user) logged in successfully
+[2025-07-03 05:53:36][INFO] User 'Clara' logged out
+[2025-07-03 05:53:36][INFO] User '' logged out
+[2025-07-03 06:07:27][WARN] Registration failed: password mismatch for 'fuseboy'
+[2025-07-03 06:08:15][INFO] User 'fuseboy' registered successfully
+[2025-07-03 06:08:32][INFO] User 'fuseboy' (Role: user) logged in successfully
+[2025-07-03 07:06:35][INFO] Message stored anonymously from airgon@example.com
+[2025-07-03 07:06:37] 📤 Email sent with status: 0
+[2025-07-03 07:06:37][INFO] Contact email sent successfully to admin from airgon@example.com
+[2025-07-03 07:06:53][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 07:07:19][INFO] Message stored for user ID 4
+[2025-07-03 07:07:21] 📤 Email sent with status: 0
+[2025-07-03 07:07:21][INFO] Contact email sent successfully to admin from airgon@example.com
+[2025-07-03 07:59:20][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 13:03:14][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-03 13:22:13][INFO] Message stored for user ID 4
+[2025-07-03 13:22:34] 📤 Email sent with status: 0
+[2025-07-03 13:22:34][INFO] Contact email sent successfully to admin from airgon@example.com
+[2025-07-03 13:23:23][INFO] Message stored for user ID 4
+[2025-07-03 13:23:30] 📤 Email sent with status: 0
+[2025-07-03 13:23:30][INFO] Contact email sent successfully to admin from airgon@example.com
+[2025-07-03 13:52:43][INFO] User 'airgon' logged out
+[2025-07-03 13:53:08][INFO] Message stored anonymously from airgon@example.com
+[2025-07-03 13:53:12] 📤 Email sent with status: 0
+[2025-07-03 13:53:12][INFO] Contact email sent successfully to admin from airgon@example.com
+[2025-07-03 14:27:21][INFO] User 'SuperAdmin' (Role: super_admin) logged in successfully
+[2025-07-03 14:31:27][INFO] User 'SuperAdmin' logged out
+[2025-07-04 04:41:35][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-04 04:52:15][INFO] User 'airgon1623' logged out
+[2025-07-04 04:52:28][INFO] User 'airgon1623' (Role: admin) logged in successfully
+[2025-07-04 05:11:34][INFO] User 'airgon' logged out
+[2025-07-04 05:11:49][WARN] Failed login attempt for identifier: 'airgon'
+[2025-07-04 05:12:04][WARN] Failed login attempt for identifier: 'airgon'
+[2025-07-04 05:12:15][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-04 05:13:25][INFO] User 'airgon' logged out
+[2025-07-04 05:13:39][WARN] Failed login attempt for identifier: 'airgon'
+[2025-07-04 05:13:46][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-04 05:51:00][INFO] User 'airgon' logged out
+[2025-07-04 05:51:14][INFO] User 'SuperAdmin' (Role: super_admin) logged in successfully
+[2025-07-04 06:03:24][INFO] User 'SuperAdmin' logged out
+[2025-07-04 06:03:33][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-04 06:04:17][INFO] User 'airgon' logged out
+[2025-07-04 06:04:32][INFO] User 'SuperAdmin' (Role: super_admin) logged in successfully
+[2025-07-04 06:29:48][INFO] User 'SuperAdmin' logged out
+[2025-07-05 04:43:40][INFO] User 'airgon' (Role: admin) logged in successfully
+[2025-07-05 04:54:00][INFO] User 'airgon' logged out
+[2025-07-05 04:54:13][INFO] User 'SuperAdmin' (Role: super_admin) logged in successfully

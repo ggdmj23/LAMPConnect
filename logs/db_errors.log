@@ -1,0 +1,4 @@
+[2025-07-02 08:03:14] DB ERROR: SQLSTATE[HY000] [1049] Unknown database 'this_db_does_not_exist'
+[2025-07-02 08:07:25] DB ERROR: SQLSTATE[HY000] [1049] Unknown database 'this_db_does_not_exist'
+[2025-07-02 08:07:38] DB ERROR: SQLSTATE[HY000] [1049] Unknown database 'this_db_does_not_exist'
+[2025-07-02 08:35:29] DB ERROR: SQLSTATE[HY000] [1049] Unknown database 'this_db_does_not_exist'

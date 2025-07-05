@@ -1,0 +1,88 @@
+.admin-layout {
+  display: grid;
+  grid-template-columns: auto minmax(300px, 1fr) auto;
+  gap: 2rem;
+  padding: 2rem 2rem 4rem;
+  width: 90%; /* Optional: limit layout width */
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* LEFT SIDEBAR */
+.admin-sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  max-height: 100%;
+}
+
+.admin-sidebar h3 {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.admin-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.admin-menu li {
+  margin: 0.8rem 0;
+  font-family: "Share Tech Mono", monospace;
+  color: #bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.admin-menu li:hover {
+  color: #00ff66;
+  text-shadow: 0 0 5px #00ff66;
+}
+
+/* RIGHT SIDEBAR - Styled Like Left Sidebar */
+.admin-spacer {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  visibility: visible;
+  max-height: 100%;
+}
+
+.admin-spacer h3 {
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.admin-spacer .admin-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.admin-spacer .admin-menu li {
+  margin: 0.8rem 0;
+  font-family: "Share Tech Mono", monospace;
+  color: #bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.admin-spacer .admin-menu li:hover {
+  color: #00ff66;
+  text-shadow: 0 0 5px #00ff66;
+}
+
+.admin-sidebar,
+.main-content,
+.admin-spacer {
+  
+  display: flex;
+  flex-direction: column;
+}

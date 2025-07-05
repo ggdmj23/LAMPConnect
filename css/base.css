@@ -1,0 +1,57 @@
+/* === base.css ===
+   Base global styles and resets — sets fonts, background, base elements
+*/
+
+/* Custom fonts */
+@font-face {
+  font-family: "VCR";
+  src: url("../fonts/vcr.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MrRobot";
+  src: url("../fonts/mrrobot.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* General body style */
+body {
+  font-family: "Share Tech Mono", monospace;
+  background-color: #111;
+  color: #ddd;
+  margin: 2rem;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+/* Full-screen background image and gradient */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 128, 128, 0.6),
+      rgba(173, 216, 230, 0.6)
+    ),
+    url("../images/home-banner-2.png") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  opacity: 1;
+  filter: saturate(1.1) brightness(1.05);
+}
+
+/* Link styles */
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

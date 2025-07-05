@@ -1,0 +1,5 @@
+# Deny access to all files inside /logs
+<FilesMatch ".*">
+  Require all denied
+</FilesMatch>
+

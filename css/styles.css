@@ -1,0 +1,10 @@
+/* === styles.css ===
+   Main stylesheet import hub — centralizes modular styles
+*/
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("animations.css");
+@import url("theme.css");
+@import url('modals.css');
+@import url('admin-panel.css');
