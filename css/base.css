@@ -2,11 +2,11 @@
    Base global styles and resets — sets fonts, background, base elements
 */
 
-/* Custom fonts */
+/* === Custom Fonts === */
 @font-face {
   font-family: "VCR";
   src: url("../fonts/vcr.ttf") format("truetype");
-  font-display: swap;
+  font-display: swap; /* Ensures fallback font displays while loading */
 }
 
 @font-face {
@@ -15,18 +15,18 @@
   font-display: swap;
 }
 
-/* General body style */
+/* === Global Body Styles === */
 body {
-  font-family: "Share Tech Mono", monospace;
-  background-color: #111;
-  color: #ddd;
+  font-family: "Share Tech Mono", monospace; /* Primary retro terminal font */
+  background-color: #111; /* Dark base for readability and theme consistency */
+  color: #ddd; /* Light text for dark theme */
   margin: 2rem;
   position: relative;
   z-index: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scrollbars on overflow */
 }
 
-/* Full-screen background image and gradient */
+/* === Background Overlay: Image + Gradient === */
 body::before {
   content: "";
   position: fixed;
@@ -34,22 +34,25 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
+
   background: linear-gradient(
       to bottom,
       rgba(0, 128, 128, 0.6),
-      rgba(173, 216, 230, 0.6)
+      /* Teal tone */ rgba(173, 216, 230, 0.6) /* Light blue tone */
     ),
     url("../images/home-banner-2.png") no-repeat center center fixed;
+
   background-size: cover;
   z-index: -1;
   opacity: 1;
-  filter: saturate(1.1) brightness(1.05);
+  filter: saturate(1.1) brightness(1.05); /* Slight enhancement */
 }
 
-/* Link styles */
+/* === Anchor Links === */
 a {
-  color: #4fc3f7;
+  color: #4fc3f7; /* Bright neon blue */
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {

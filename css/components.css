@@ -1,8 +1,8 @@
 /* === components.css ===
-   Custom reusable components: glitch text, console boxes, labels, etc.
+   Custom reusable components: glitch text, console boxes, labels, form fields, buttons, message actions, tables, etc.
 */
 
-/* Glitch header title */
+/* === GLITCH EFFECTS === */
 .glitch-title {
   font-family: "MrRobot", "Bebas Neue", sans-serif;
   font-size: 3.2rem;
@@ -10,9 +10,9 @@
   text-transform: uppercase;
   color: #ff003c;
   text-shadow: 1px 1px #000;
-  position: relative;
-  margin: 3rem 0 2rem;
   text-align: center;
+  margin: 3rem 0 2rem;
+  position: relative;
   animation: flicker 2s infinite;
 }
 
@@ -40,15 +40,14 @@
   animation: glitchBottom 1.3s infinite linear alternate-reverse;
 }
 
-/* Glitch subtitle (used in footer) */
 .glitch-text {
   font-family: "MrRobot", "Bebas Neue", sans-serif;
   font-size: 1.5rem;
   color: #ff003c;
-  position: relative;
-  display: inline-block;
   margin-bottom: 0.2rem;
   letter-spacing: 1.5px;
+  display: inline-block;
+  position: relative;
   animation: flicker 2s infinite;
 }
 
@@ -64,40 +63,32 @@
 }
 
 .glitch-text::before {
-  animation: glitchTop 1.5s infinite linear alternate-reverse;
   left: 1px;
   text-shadow: -1px 0 blue;
+  animation: glitchTop 1.5s infinite linear alternate-reverse;
 }
 
 .glitch-text::after {
-  animation: glitchBottom 1.5s infinite linear alternate-reverse;
   left: -1px;
   text-shadow: 1px 0 limegreen;
+  animation: glitchBottom 1.5s infinite linear alternate-reverse;
 }
 
-/* Console-style UI boxes */
+/* === CONSOLE BOXES & MESSAGES === */
 .console-box,
 .status-message {
   background-color: #000;
   color: #33ff33;
   font-family: "Share Tech Mono", monospace;
   font-size: 1rem;
-  border: 1px solid #33ff33;
   padding: 1rem 1.5rem;
   margin: 2rem 0;
+  border: 1px solid #33ff33;
+  border-radius: 5px;
   box-shadow: 0 0 10px #33ff33;
-  position: relative;
   line-height: 1.6;
   overflow: hidden;
-  border-radius: 5px;
-}
-
-.console-box::before,
-.status-message::after {
-  content: "_";
-  animation: blink 1s step-start infinite;
-  color: inherit;
-  margin-left: 4px;
+  position: relative;
 }
 
 .console-box::before {
@@ -118,7 +109,13 @@
   pointer-events: none;
 }
 
-/* Console-like status labels */
+.status-message::after {
+  content: "_";
+  animation: blink 1s step-start infinite;
+  color: inherit;
+  margin-left: 4px;
+}
+
 .console-label {
   font-weight: bold;
   margin-right: 0.5rem;
@@ -126,7 +123,7 @@
   font-family: "Share Tech Mono", monospace;
 }
 
-/* List with glitch bullets */
+/* === CUSTOM BULLETS === */
 ul.custom-bullets {
   list-style: none;
   padding-left: 0;
@@ -141,11 +138,11 @@ ul.custom-bullets li {
 ul.custom-bullets li::before {
   content: "L";
   position: absolute;
-  left: 0;
   top: 0.3rem;
+  left: 0;
   width: 1.1rem;
   height: 1.1rem;
-  background-color: black;
+  background: black;
   color: #ff003c;
   font-weight: bold;
   border-radius: 50%;
@@ -156,83 +153,74 @@ ul.custom-bullets li::before {
   animation: bullet-glitch 1.5s infinite alternate-reverse;
 }
 
-
+/* === FORM FIELDS === */
 input,
 textarea,
 select {
   background-color: transparent;
   color: #00ff66;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   font-size: 1rem;
   padding: 0.5rem;
   width: 100%;
-  box-sizing: border-box;
   border: none;
   border-radius: 3px;
-
-  /* Engraved/inset effect */
+  box-sizing: border-box;
+  outline: none;
   box-shadow:
     inset 2px 2px 4px rgba(0, 0, 0, 0.8),
     inset -2px -2px 4px rgba(0, 255, 102, 0.2);
-
-  outline: none;
   transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
-/* Placeholder styling */
 input::placeholder,
 textarea::placeholder {
   color: rgba(0, 255, 102, 0.5);
   font-style: italic;
 }
 
-/* Focus effect (3D glow outline) */
 input:focus,
 textarea:focus,
 select:focus {
+  color: #fff;
   box-shadow:
     inset 1px 1px 3px rgba(0, 0, 0, 0.7),
     inset -1px -1px 2px rgba(0, 255, 102, 0.3),
     0 0 5px #00ff66,
     0 0 10px #00ff66;
-  color: #ffffff;
 }
 
-
+/* === BUTTONS === */
 button,
 input[type="submit"],
 input[type="button"] {
-  background-color: transparent;
+  background: transparent;
   color: #00ff66;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
-  /* Engraved / inset terminal style */
   box-shadow:
     inset 2px 2px 4px rgba(0, 0, 0, 0.8),
     inset -2px -2px 4px rgba(0, 255, 102, 0.2),
     0 0 4px rgba(0, 255, 102, 0.3);
-
   transition: all 0.3s ease;
 }
 
-/* Hover effect — intense terminal glow */
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  color: #ffffff;
+  color: #fff;
   box-shadow:
     inset 1px 1px 2px rgba(0, 0, 0, 0.7),
     inset -1px -1px 2px rgba(0, 255, 102, 0.3),
     0 0 6px #00ff66,
     0 0 12px #00ff66;
+  animation: pulseGlow 1.2s infinite;
 }
 
-/* Focus effect for accessibility */
 button:focus,
 input[type="submit"]:focus,
 input[type="button"]:focus {
@@ -244,22 +232,13 @@ input[type="button"]:focus {
     inset -1px -1px 2px rgba(0, 255, 102, 0.3);
 }
 
-button:hover {
-  animation: pulseGlow 1.2s infinite;
-}
-
-@keyframes pulseGlow {
-  0%   { box-shadow: 0 0 5px #00ff66; }
-  50%  { box-shadow: 0 0 12px #00ff66; }
-  100% { box-shadow: 0 0 5px #00ff66; }
-}
-
+/* === DELETE BUTTON === */
 .delete-button {
-  background-color: transparent;
+  background: transparent;
   color: #ff003c;
   border: 1px solid #ff003c;
   padding: 0.3rem 0.6rem;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   font-size: 0.9rem;
   margin-top: 0.5rem;
   cursor: pointer;
@@ -271,9 +250,10 @@ button:hover {
 .delete-button:hover {
   background-color: rgba(255, 0, 60, 0.1);
   box-shadow: 0 0 6px #ff003c;
-  color: #ffffff;
+  color: #fff;
 }
 
+/* === INLINE PASSWORD TOGGLE === */
 .password-inline-wrapper {
   position: relative;
   width: 100%;
@@ -282,10 +262,10 @@ button:hover {
 .password-inline-wrapper input[type="password"] {
   width: 100%;
   padding-right: 2.5rem;
-  box-sizing: border-box;
-  height: 2.5rem; /* match your other fields if needed */
-  line-height: 1.5rem;
+  height: 2.5rem;
   font-size: 1rem;
+  line-height: 1.5rem;
+  box-sizing: border-box;
 }
 
 .toggle-password {
@@ -297,7 +277,6 @@ button:hover {
   border: none;
   color: #0f0;
   cursor: pointer;
-  padding: 0;
   height: 2rem;
   width: 2rem;
   display: flex;
@@ -306,17 +285,16 @@ button:hover {
   font-size: 1.1rem;
 }
 
-
 .toggle-password i {
-  pointer-events: none; /* avoids issues on click */
+  pointer-events: none;
 }
 
-
+/* === TABLE STYLES === */
 .main-content table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Optional: ensures even column widths */
-  background-color: rgba(0, 0, 0, 0.3);
+  table-layout: fixed;
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid #00ff66;
   box-shadow: 0 0 10px #000;
 }
@@ -327,7 +305,7 @@ button:hover {
   text-align: left;
   border-bottom: 1px solid #00ff66;
   word-wrap: break-word;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .main-content th {
@@ -345,9 +323,8 @@ button:hover {
   overflow-x: auto;
 }
 
-
 .scroll-table-wrapper {
-  max-height: 400px; /* or 50vh for responsive */
+  max-height: 400px;
   overflow-y: auto;
   border: 1px solid #00ff66;
   border-radius: 6px;
@@ -355,7 +332,6 @@ button:hover {
   margin-top: 1rem;
 }
 
-/* Optional: style scrollbar for retro vibe */
 .scroll-table-wrapper::-webkit-scrollbar {
   width: 8px;
 }
@@ -367,7 +343,6 @@ button:hover {
   background-color: #111;
 }
 
-
 .scroll-table-wrapper thead th {
   position: sticky;
   top: 0;
@@ -375,12 +350,11 @@ button:hover {
   z-index: 2;
 }
 
-
-
+/* === MESSAGE ACTION BUTTONS === */
 .message-actions {
   display: flex;
   gap: 0.5rem;
-  align-items: center; /* This ensures vertical alignment */
+  align-items: center;
   margin-top: 0.5rem;
 }
 
@@ -396,10 +370,9 @@ button:hover {
   padding: 0.4rem 0.8rem;
   font-size: 0.9rem;
   line-height: 1;
-  height: 2rem; /* Optional: force equal height */
+  height: 2rem;
   border-radius: 5px;
 }
-
 
 .fav-toggle-btn {
   background-color: #003300;
@@ -414,23 +387,10 @@ button:hover {
   border: 1px solid #ff0040;
 }
 
-
-
+/* === FAVORITE STATE === */
 .message-item.favorite {
   border: 2px solid #00ff00;
   box-shadow: 0 0 10px 2px #00ff00;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.message-item.favorite {
   animation: glow-pulse 1.5s infinite alternate;
-}
-
-@keyframes glow-pulse {
-  from {
-    box-shadow: 0 0 8px 1px #00ff00;
-  }
-  to {
-    box-shadow: 0 0 16px 3px #00ff00;
-  }
+  transition: box-shadow 0.3s ease-in-out;
 }

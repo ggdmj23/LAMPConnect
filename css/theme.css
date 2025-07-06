@@ -1,8 +1,9 @@
 /* === theme.css ===
-   Color themes for labels, buttons, inputs, footers, etc.
+   Centralized color themes for status indicators, console labels,
+   footer banners, dashboard content, and reusable theme blocks.
 */
 
-/* Console label colors */
+/* === CONSOLE LABEL COLORS === */
 .console-label.ok {
   color: #33ff33;
   text-shadow: 0 0 8px #33ff33;
@@ -18,7 +19,7 @@
   text-shadow: 0 0 8px #ff3366;
 }
 
-/* Status message styling */
+/* === STATUS MESSAGES === */
 .status-message.success {
   color: #33ff33;
   border-color: #33ff33;
@@ -31,7 +32,7 @@
   box-shadow: 0 0 8px #ff3366;
 }
 
-/* Footer CRT-style banner */
+/* === FOOTER CRT-STYLE BANNER === */
 .footer-crt-text {
   background-color: #000;
   color: #33ff33;
@@ -62,8 +63,7 @@
   animation: blink 1s steps(1, start) infinite;
 }
 
-
-
+/* === DASHBOARD SECTION BLOCKS === */
 .dashboard-section {
   margin-bottom: 2rem;
 }
@@ -82,11 +82,10 @@
   border-radius: 6px;
 }
 
-
+/* === INFO NOTE === */
 .info-note {
   font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 1rem;
   font-style: italic;
 }
-

@@ -1,0 +1,16 @@
+# Ignore config and credentials
+config.php
+includes/db.php
+*.log
+
+# OS files
+.DS_Store
+
+# Composer / node (if used later)
+vendor/
+node_modules/
+
+# IDE/editor junk
+.vscode/
+.idea/
+

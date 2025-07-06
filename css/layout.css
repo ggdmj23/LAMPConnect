@@ -2,10 +2,12 @@
    Layout and structural containers (header, nav, main content, footer)
 */
 
+/* === HEADER === */
 header {
   padding-top: 3rem; /* Avoid overlap with fixed nav */
 }
 
+/* === NAVIGATION BAR === */
 .nav {
   position: fixed;
   top: 0;
@@ -41,7 +43,6 @@ header {
   text-shadow: 0 0 3px #ff003c, 0 0 6px #ff003c;
 }
 
-/* ACTIVE LINK: glowing green + underscore */
 .nav a.active {
   color: #00ff66;
   text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66;
@@ -53,20 +54,10 @@ header {
   right: -1rem;
   top: 0;
   font-size: 1.2em;
-  animation: blink 1s steps(2, start) infinite;
+  animation: blink 1s steps(2, start) infinite; /* Uses shared animation */
 }
 
-/* Blinking animation like a cursor */
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
-/* MAIN CONTENT (improved alignment) */
+/* === MAIN CONTENT AREA === */
 .main-content {
   width: 100%;
   box-sizing: border-box;
@@ -79,7 +70,7 @@ header {
   min-height: 100%;
 }
 
-/* Footer layout */
+/* === FOOTER === */
 .site-footer {
   bottom: 0;
   left: 0;
@@ -91,9 +82,9 @@ header {
   border-top: 1px solid #444;
   text-align: center;
   z-index: 10;
+  margin-top: -25px;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
-  margin-top: -25px;
 }
 
 .site-footer a {
@@ -106,7 +97,7 @@ header {
   color: #ff003c;
 }
 
-/* NAV DROPDOWN */
+/* === NAVIGATION DROPDOWN === */
 .nav-dropdown {
   position: relative;
   display: inline-block;
@@ -156,45 +147,4 @@ header {
 
 .nav-dropdown:hover .nav-dropdown-menu {
   display: block;
-}
-
-/* SIDEBAR STYLES */
-.admin-menu {
-  list-style: none;
-  padding-left: 0;
-}
-
-.admin-menu li {
-  margin: 0.8rem 0;
-  font-family: "Share Tech Mono", monospace;
-}
-
-/* Sidebar link styling */
-.admin-menu li a {
-  color: #f0f0f0;
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-  position: relative;
-}
-
-/* Hover style for sidebar links */
-.admin-menu li a:hover {
-  color: #ff003c;
-  text-shadow: 0 0 3px #ff003c, 0 0 6px #ff003c;
-}
-
-/* Active style for sidebar links */
-.admin-menu li a.active {
-  color: #00ff66;
-  text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66;
-  font-weight: bold;
-}
-
-.admin-menu li a.active::after {
-  content: "_";
-  position: absolute;
-  right: -1rem;
-  top: 0;
-  font-size: 1.2em;
-  animation: blink 1s steps(2, start) infinite;
 }
