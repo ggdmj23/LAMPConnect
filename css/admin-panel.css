@@ -7,10 +7,11 @@
   display: grid;
   grid-template-columns: auto minmax(300px, 1fr) auto;
   gap: 2rem;
-  padding: 2rem 2rem 4rem;
-  width: 90%;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  align-items: stretch;
+  box-sizing: border-box;
 }
 
 /* === LEFT SIDEBAR === */
@@ -20,9 +21,9 @@
   padding: 2rem 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .admin-sidebar h3 {
@@ -67,7 +68,7 @@
   right: -1rem;
   top: 0;
   font-size: 1.2em;
-  animation: blink 1s steps(2, start) infinite; /* Uses global animation */
+  animation: blink 1s steps(2, start) infinite;
 }
 
 /* === RIGHT SIDEBAR === */
@@ -77,10 +78,9 @@
   padding: 2rem 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
-  visibility: visible;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .admin-spacer h3 {
@@ -98,4 +98,20 @@
 .admin-spacer .admin-menu li {
   margin: 0.8rem 0;
   font-family: "Share Tech Mono", monospace;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 768px) {
+  .admin-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .admin-sidebar,
+  .admin-spacer {
+    width: 100%;
+    padding: 1.2rem;
+  }
 }
